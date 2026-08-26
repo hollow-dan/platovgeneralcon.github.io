@@ -3,16 +3,17 @@
    =========================================================== */
 :root{
   /* color: drawn from job-site materials */
-  --ink:        #1F242B;   /* charcoal — primary text, dark sections */
-  --drywall:    #ECE7DD;   /* page background — joint-compound white */
-  --paper:      #FAF7F2;   /* card background, lighter than page */
-  --chalk-blue: #2C5C82;   /* primary accent — snap-line blue */
+  --ink:        #1F242B;   /* charcoal — primary text, dark sections     */
+  --drywall:    #ECE7DD;   /* page background — joint-compound white     */
+  --paper:      #FAF7F2;   /* card background, lighter than page         */
+  --chalk-blue: #2C5C82;   /* primary accent — snap-line blue            */
   --cedar:      #BD5B2C;   /* secondary accent — deck-stain orange, CTAs */
-  --stamp-red:  #A33327;   /* small accent — completed stamp / badges */
-  --line:       #CFC8BA;   /* hairline borders / dividers */
-  --ink-soft:   #50565F;   /* secondary text on light bg */
-  --paper-soft: #D9D2C3;   /* secondary text on dark bg */
-  --yellow:     #FFB901;   /* small accent — for ruler */
+  --stamp-red:  #A33327;   /* small accent — completed stamp / badges    */
+  --line:       #CFC8BA;   /* hairline borders / dividers                */
+  --ink-soft:   #50565F;   /* secondary text on light bg                 */
+  --paper-soft: #D9D2C3;   /* secondary text on dark bg                  */
+  --yellow:     #FFB901;   /* small accent — for ruler                   */
+  --white:      #FFFFFF;   /* small accent — for clips                   */
 
   --font-display: "Big Shoulders Display", sans-serif;
   --font-body:    "Inter",                 sans-serif;
@@ -29,7 +30,9 @@
 html{ scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior: auto; }
-  *,*::before,*::after{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  *,*::before,*::after{ animation-duration: 0.01ms !important; 
+    animation-iteration-count: 1 !important; 
+    transition-duration: 0.01ms !important; }
 }
 
 body{
@@ -391,13 +394,13 @@ a.tile{ cursor: pointer; }
 .tile-media-dark{ background-color: var(--ink); }
 .tile-placeholder{
   display:flex; flex-direction:column; align-items:center; gap:8px;
-  color: var(--ink-soft);
+  color: var(--white);
   font-family: var(--font-mono);
   font-size: 11.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.tile-media-dark .tile-placeholder{ color: var(--paper-soft); }
+.tile-media-dark .tile-placeholder{ color: var(--white); }
 .tile-placeholder svg{ width: 28px; height: 28px; }
 
 .tile-stamp{
